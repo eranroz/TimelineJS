@@ -449,7 +449,13 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 			slider.setSlide(0);
 			timenav.setMarker(0, config.ease,config.duration);
 		};
-		
+
+		this.goToEvent = function(n) {
+			goToEvent(n);
+		}
+		this.getDates = function() {
+			return _dates;
+		}
 		/* DATA 
 		================================================== */
 		function getData(url) {
@@ -696,5 +702,4 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 	};
 
 	VMM.Timeline.Config = {};
-	
 };
