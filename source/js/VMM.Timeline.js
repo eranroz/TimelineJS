@@ -456,6 +456,9 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 		this.getDates = function() {
 			return _dates;
 		}
+		this.getTimelineID = function() {
+			return timeline_id;
+		}
 		/* DATA 
 		================================================== */
 		function getData(url) {

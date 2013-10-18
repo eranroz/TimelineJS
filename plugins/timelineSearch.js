@@ -25,7 +25,7 @@ function installSearch(){
 			$(timeline.getTimelineID()).before(Ssearchbox);
 	};
 }
-//load jquery-ui in case it wasn't loaded
+//load jquery-ui in case it wasn't loaded yet
 if (!($.ui)) {
 	$.getScript( 'http://code.jquery.com/ui/1.10.3/jquery-ui.js' ).done( installSearch );
 	$( 'head' ).append( $( '<link rel="stylesheet" type="text/css" />' ).attr( 'href', 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css' ) );

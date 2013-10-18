@@ -102,7 +102,36 @@ Here's a simple example:
 		<div id="my-timeline"></div>
 	</body>
 ```
+### Search events (*new*)
+You could also add search widget to search events in the timeline.
 
+Here's a simple example:
+```html
+	<head>
+		<!-- jQuery -->
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<!-- BEGIN TimelineJS -->
+		<script type="text/javascript" src="path_to_js/storyjs-embed.js"></script>
+		<script type="text/javascript" src="path_to_js/timelineSearch.js"></script>
+		<script>
+			$(function() {
+				createStoryJS({
+					type:		'timeline',
+					width:		'800',
+					height:		'600',
+					source:		'path_to_json/or_link_to_googlespreadsheet',
+					embed_id:	'my-timeline'
+				}).then( addTimelineSearch );
+			});
+		</script>
+		<!-- END TimelineJS -->
+	</head>
+	<body>	
+		<div id="my-timeline"></div>
+	</body>
+`
 	
 ## Config Options
 Here are some of the options you can set in the config.
