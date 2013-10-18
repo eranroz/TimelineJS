@@ -131,7 +131,7 @@ Here's a simple example:
 	<body>	
 		<div id="my-timeline"></div>
 	</body>
-`
+```
 	
 ## Config Options
 Here are some of the options you can set in the config.
